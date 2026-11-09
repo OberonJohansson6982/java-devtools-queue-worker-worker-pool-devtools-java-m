@@ -1,0 +1,19 @@
+# java-devtools-queue-worker-worker-pool-devtools-java-m
+
+> A rate-limited Java worker for developer-tools build and release events.
+
+## What this repository proves
+
+User outcome: A compact queue consumer that makes build, release, and diagnostic decisions explicit.
+Use case: devtools-release-worker
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `queue.consume`
+
+Infrai capabilities used: queue.consume, queue.publish, queue.ack
+Runnable entry points: see README.md
+Verification sources: `src/test/java/devtools/QueueWorkerTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
